@@ -17,7 +17,7 @@ public class HomePage extends PageBase {
     @CacheLookup
     WebElement SearchBox;
 
-    @FindBy(xpath ="//button[@class='cdx-button cdx-search-input__end-button']")
+    @FindBy(xpath ="/html[1]/body[1]/div[1]/header[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[1]/button[1]")
     @CacheLookup
     WebElement HitSearch;
 

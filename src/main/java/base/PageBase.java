@@ -25,11 +25,6 @@ public class PageBase {
         PageFactory.initElements(driver, this);
         js = (JavascriptExecutor) driver;
     }
-    public PageBase() {
-        wait = new WebDriverWait(driver, ofSeconds(TIMEOUT) , ofSeconds(POLLING));
-        js = (JavascriptExecutor) driver;
-
-    }
 
     /**
      * A method to send a string to a text field.
@@ -86,9 +81,9 @@ public class PageBase {
             // scroll to the element.
             js.executeScript("arguments[0].scrollIntoView();", element);
             //  element.isDisplayed();
-            return true;
-        } catch (TimeoutException toe) {
             return false;
+        } catch (TimeoutException toe) {
+            return true;
         }
     }
 

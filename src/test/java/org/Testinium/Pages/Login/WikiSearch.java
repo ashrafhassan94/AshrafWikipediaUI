@@ -19,7 +19,7 @@ public class WikiSearch extends TestBase{
         Home.SearchForTopic("fifa WC 2002");
 
 
-        SearchPage Search = new SearchPage();
+        SearchPage Search = new SearchPage(getDriver());
         Assert.assertTrue(Search.CheckIfSearchReturnsArticle());
 
     }
@@ -30,7 +30,7 @@ public class WikiSearch extends TestBase{
         getDriver().manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
         Home.SearchForTopic("hhghgg");
         //AssertNewPageTitle or element located
-        SearchPage Search = new SearchPage();
+        SearchPage Search = new SearchPage(getDriver());
         Assert.assertFalse(Search.CheckIfSearchReturnsArticle());
 
     }

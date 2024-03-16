@@ -4,6 +4,7 @@ import configurations.Constants;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import org.testng.annotations.*;
@@ -18,10 +19,13 @@ public class TestBase implements _DriverManager {
 
     public static WebDriver driver;
     @BeforeSuite
-    public void setUp(){
+    public void setUpHeadlessDriver(){
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        ChromeOptions ch = new ChromeOptions();
+        ch.addArguments("--headless");
+        driver = new ChromeDriver(ch);
         driver.get(WikiURL);
+
     }
     public static WebDriver getDriver() {
        return driver;
