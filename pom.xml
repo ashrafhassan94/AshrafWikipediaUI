@@ -28,7 +28,6 @@
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
       <version>7.9.0</version>
-      <scope>test</scope>
     </dependency>
 
 
@@ -71,6 +70,7 @@
       <version>3.25.3</version>
       <scope>test</scope>
     </dependency>
+
 
 
   </dependencies>

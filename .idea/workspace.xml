@@ -5,19 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f81e1901-95a2-4f59-a02c-4f7deecbc36a" name="Changes" comment="WikiPediaUI intilalized test project">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/base/PageBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/base/TestBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/base/_DriverManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/configurations/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/configurations/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Testinium/Pages/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Testinium/Pages/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Testinium/Pages/SearchPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/Testinium/Pages/Login/WikiLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/Testinium/Pages/Login/WikiSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Testinium/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/Testinium/AppTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2dhx1ZAWqFxpRw4bOp9vxzXWcjc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -32,9 +53,46 @@
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "kotlin-language-version-configured": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.WikiSearch.Validate_SuccessfulLogin.executor": "Run",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/Ashraf Ismail/git/AshrafWikipediaUI/src/main/java",
+    "last_opened_file_path": "C:/Users/Ashraf Ismail/git/AshrafWikipediaUI/src/main/java/configurations"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ashraf Ismail\git\AshrafWikipediaUI\src\main\java\configurations" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="base" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="WikiSearch.Validate_SuccessfulLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AshrafWikipediaUI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.Testinium.Pages.Login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.Testinium.Pages.Login" />
+      <option name="MAIN_CLASS_NAME" value="org.Testinium.Pages.Login.WikiSearch" />
+      <option name="METHOD_NAME" value="Validate_SuccessfulLogin" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.WikiSearch.Validate_SuccessfulLogin" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
