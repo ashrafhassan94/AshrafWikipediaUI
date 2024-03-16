@@ -4,22 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f81e1901-95a2-4f59-a02c-4f7deecbc36a" name="Changes" comment="WikiPediaUI intilalized test project">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/base/PageBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/base/TestBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/base/_DriverManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/configurations/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/configurations/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Testinium/Pages/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Testinium/Pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Testinium/Pages/SearchPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/Testinium/Pages/Login/WikiLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/Testinium/Pages/Login/WikiSearch.java" afterDir="false" />
+    <list default="true" id="f81e1901-95a2-4f59-a02c-4f7deecbc36a" name="Changes" comment="adding necessary files to test environment, test classes and test cases">
+      <change afterPath="$PROJECT_DIR$/src/main/java/configurations/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Testinium/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/Testinium/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/base/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +56,24 @@
       <recent name="base" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.WikiLogin">
+    <configuration name="WikiLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AshrafWikipediaUI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.Testinium.Pages.Login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.Testinium.Pages.Login" />
+      <option name="MAIN_CLASS_NAME" value="org.Testinium.Pages.Login.WikiLogin" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WikiSearch.Validate_SuccessfulLogin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AshrafWikipediaUI" />
       <extension name="coverage">
@@ -89,6 +94,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.WikiLogin" />
         <item itemvalue="TestNG.WikiSearch.Validate_SuccessfulLogin" />
       </list>
     </recent_temporary>
@@ -117,12 +123,21 @@
       <option name="project" value="LOCAL" />
       <updated>1710474318075</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="adding necessary files to test environment, test classes and test cases">
+      <option name="closed" value="true" />
+      <created>1710556722393</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1710556722394</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="WikiPediaUI intilalized test project" />
-    <option name="LAST_COMMIT_MESSAGE" value="WikiPediaUI intilalized test project" />
+    <MESSAGE value="adding necessary files to test environment, test classes and test cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding necessary files to test environment, test classes and test cases" />
   </component>
 </project>
