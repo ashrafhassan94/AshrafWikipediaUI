@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import static java.time.Duration.ofSeconds;
@@ -50,8 +51,14 @@ public class PageBase {
     }
 
     protected void scrollToTheElement(WebElement element) {
-        js.executeScript("arguments[0].scrollIntoView();", element);
 
+        // check the element is allocated.
+        isElementLocated(element);
+        try {
+            js.executeScript("arguments[0].scrollIntoView();", element);
+        } catch (Exception e) {
+            fail(e.getMessage());
+        }
     }
 
     protected void clearText(WebElement element) {
@@ -114,6 +121,31 @@ public class PageBase {
                 fail(root.getMessage());
             }
         }
+    }
+
+    protected void selectFromDropDown(WebElement element, String optionToBeSelected ) {
+        // make sure that the dropdown element allocated successfully.
+        isElementLocated(element);
+        // wait to get the element clickable.
+        try {
+            wait.until(ExpectedConditions.elementToBeClickable(element));
+        } catch (TimeoutException toe) {
+            fail(toe.getMessage());
+        } catch (Exception e) {
+            fail(e.getMessage());
+        }
+        // Select using selenium
+        // Create Select object
+        Select dropdown = new Select(element);
+
+        // Select option by different methods
+
+        try {
+            dropdown.selectByVisibleText(optionToBeSelected);
+        } catch (Exception root) {
+                fail(root.getMessage());
+            }
+
     }
 
 }
