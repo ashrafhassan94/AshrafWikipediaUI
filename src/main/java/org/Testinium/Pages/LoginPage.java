@@ -32,7 +32,7 @@ public class LoginPage extends PageBase {
     @CacheLookup
     WebElement HitLogoin;
 
-    public void NavigateToLoginPage() {
+    public void PerformLogin() {
         clickOnBtn(HitLogoin);
     }
 

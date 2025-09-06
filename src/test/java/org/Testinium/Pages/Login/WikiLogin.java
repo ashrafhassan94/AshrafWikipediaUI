@@ -33,6 +33,7 @@ public class WikiLogin extends TestBase {
         Login.InsertUsername("InValidUsername");
         Login.InsertPassword("InValidPass");
         //AssertValidLogin
+        Login.PerformLogin();
 
     }
 
