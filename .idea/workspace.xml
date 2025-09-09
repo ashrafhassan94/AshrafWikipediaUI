@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f81e1901-95a2-4f59-a02c-4f7deecbc36a" name="Changes" comment="resolving conflict with getdriver">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/configurations/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/configurations/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/Testinium/Pages/Login/WikiLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Testinium/Pages/Login/WikiLogin.java" afterDir="false" />
-    </list>
+    <list default="true" id="f81e1901-95a2-4f59-a02c-4f7deecbc36a" name="Changes" comment="adding more login test cases" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -216,7 +212,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710589890284</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="adding more login test cases">
+      <option name="closed" value="true" />
+      <created>1757459109185</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1757459109185</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -224,6 +228,7 @@
     <MESSAGE value="WikiPediaUI intilalized test project" />
     <MESSAGE value="adding necessary files to test environment, test classes and test cases" />
     <MESSAGE value="resolving conflict with getdriver" />
-    <option name="LAST_COMMIT_MESSAGE" value="resolving conflict with getdriver" />
+    <MESSAGE value="adding more login test cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding more login test cases" />
   </component>
 </project>
