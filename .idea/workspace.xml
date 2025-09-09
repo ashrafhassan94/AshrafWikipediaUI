@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f81e1901-95a2-4f59-a02c-4f7deecbc36a" name="Changes" comment="resolving conflict with getdriver">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/base/PageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/PageBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/base/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Testinium/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Testinium/Pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Testinium/Pages/SearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Testinium/Pages/SearchPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/Testinium/Pages/Login/WikiSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Testinium/Pages/Login/WikiSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/configurations/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/configurations/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/Testinium/Pages/Login/WikiLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Testinium/Pages/Login/WikiLogin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,11 +24,23 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "ashrafhassan94"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ashrafhassan94/AshrafWikipediaUI.git",
+    "accountId": "18750585-2912-457e-a279-dbce7eca991b"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2dhx1ZAWqFxpRw4bOp9vxzXWcjc" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -44,11 +53,23 @@
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.WikiLogin.Validate_Brute_force_lockout.executor": "Run",
+    "TestNG.WikiLogin.Validate_FailLogin.executor": "Run",
+    "TestNG.WikiLogin.Validate_FailLogin_empty_both_fields.executor": "Run",
+    "TestNG.WikiLogin.Validate_FailLogin_empty_password.executor": "Run",
+    "TestNG.WikiLogin.Validate_FailLogin_empty_username.executor": "Run",
+    "TestNG.WikiLogin.Validate_FailLogin_invalid_password.executor": "Run",
     "TestNG.WikiLogin.Validate_FailesLogin.executor": "Run",
+    "TestNG.WikiLogin.Validate_SuccessfulLogin.executor": "Run",
+    "TestNG.WikiLogin.Validate_remmember_me_checkbox.executor": "Run",
+    "TestNG.WikiLogin.Validate_session_handling_when_using_the_browser_back_button.executor": "Run",
     "TestNG.WikiLogin.executor": "Run",
     "TestNG.WikiSearch.Validate_Search_Journey_forDummyWords.executor": "Run",
     "TestNG.WikiSearch.Validate_SuccessfulLogin.executor": "Run",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "C:/Users/Ashraf Ismail/git/AshrafWikipediaUI/src/main/java",
     "last_opened_file_path": "C:/Users/Ashraf Ismail/git/AshrafWikipediaUI/src/main/java/configurations"
@@ -62,7 +83,7 @@
       <recent name="base" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.WikiSearch.Validate_Search_Journey_forDummyWords">
+  <component name="RunManager" selected="TestNG.WikiLogin">
     <configuration name="WikiLogin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AshrafWikipediaUI" />
       <extension name="coverage">
@@ -80,7 +101,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WikiLogin.Validate_FailesLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="WikiLogin.Validate_Brute_force_lockout" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AshrafWikipediaUI" />
       <extension name="coverage">
         <pattern>
@@ -90,7 +111,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.Testinium.Pages.Login" />
       <option name="MAIN_CLASS_NAME" value="org.Testinium.Pages.Login.WikiLogin" />
-      <option name="METHOD_NAME" value="Validate_FailesLogin" />
+      <option name="METHOD_NAME" value="Validate_Brute_force_lockout" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -98,7 +119,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WikiSearch.Validate_Search_Journey_forDummyWords" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="WikiLogin.Validate_FailLogin_empty_password" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AshrafWikipediaUI" />
       <extension name="coverage">
         <pattern>
@@ -107,8 +128,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.Testinium.Pages.Login" />
-      <option name="MAIN_CLASS_NAME" value="org.Testinium.Pages.Login.WikiSearch" />
-      <option name="METHOD_NAME" value="Validate_Search_Journey_forDummyWords" />
+      <option name="MAIN_CLASS_NAME" value="org.Testinium.Pages.Login.WikiLogin" />
+      <option name="METHOD_NAME" value="Validate_FailLogin_empty_password" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -116,7 +137,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WikiSearch.Validate_SuccessfulLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="WikiLogin.Validate_remmember_me_checkbox" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AshrafWikipediaUI" />
       <extension name="coverage">
         <pattern>
@@ -125,8 +146,26 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.Testinium.Pages.Login" />
-      <option name="MAIN_CLASS_NAME" value="org.Testinium.Pages.Login.WikiSearch" />
-      <option name="METHOD_NAME" value="Validate_SuccessfulLogin" />
+      <option name="MAIN_CLASS_NAME" value="org.Testinium.Pages.Login.WikiLogin" />
+      <option name="METHOD_NAME" value="Validate_remmember_me_checkbox" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WikiLogin.Validate_session_handling_when_using_the_browser_back_button" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AshrafWikipediaUI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.Testinium.Pages.Login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.Testinium.Pages.Login" />
+      <option name="MAIN_CLASS_NAME" value="org.Testinium.Pages.Login.WikiLogin" />
+      <option name="METHOD_NAME" value="Validate_session_handling_when_using_the_browser_back_button" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -136,19 +175,13 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.WikiSearch.Validate_Search_Journey_forDummyWords" />
-        <item itemvalue="TestNG.WikiLogin.Validate_FailesLogin" />
         <item itemvalue="TestNG.WikiLogin" />
-        <item itemvalue="TestNG.WikiSearch.Validate_SuccessfulLogin" />
+        <item itemvalue="TestNG.WikiLogin.Validate_Brute_force_lockout" />
+        <item itemvalue="TestNG.WikiLogin.Validate_remmember_me_checkbox" />
+        <item itemvalue="TestNG.WikiLogin.Validate_session_handling_when_using_the_browser_back_button" />
+        <item itemvalue="TestNG.WikiLogin.Validate_FailLogin_empty_password" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-16.0.2-corretto-16.0.2-4caba194b151-cab9e76a" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
