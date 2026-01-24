@@ -10,6 +10,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
+import java.util.concurrent.TimeUnit;
+
+import static java.time.Duration.ofMillis;
 import static java.time.Duration.ofSeconds;
 import static org.testng.Assert.fail;
 
@@ -22,7 +26,8 @@ public class PageBase {
     protected static WebDriver driver;
 
     public PageBase(WebDriver driver) {
-        wait = new WebDriverWait(driver, ofSeconds(TIMEOUT) , ofSeconds(POLLING));
+        wait = new WebDriverWait(driver, ofSeconds(TIMEOUT) , ofMillis(POLLING));
+        driver.manage().timeouts().implicitlyWait( Duration.ofSeconds(0));
         PageFactory.initElements(driver, this);
         js = (JavascriptExecutor) driver;
     }

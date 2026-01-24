@@ -15,7 +15,6 @@ public class WikiLogin extends TestBase {
     @Test
     public void Validate_SuccessfulLogin(){
         HomePage Home = new HomePage(getDriver());
-        getDriver().manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
         Home.NavigateToLoginPage();
 
         LoginPage Login = new LoginPage(getDriver());
@@ -26,7 +25,6 @@ public class WikiLogin extends TestBase {
     @Test
     public void Validate_FailLogin_invalid_username_and_password(){
         HomePage Home = new HomePage(getDriver());
-        getDriver().manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
         Home.NavigateToLoginPage();
 
         LoginPage Login = new LoginPage(getDriver());
@@ -38,7 +36,6 @@ public class WikiLogin extends TestBase {
     @Test
     public void Validate_FailLogin_invalid_password(){
         HomePage Home = new HomePage(getDriver());
-        getDriver().manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
         Home.NavigateToLoginPage();
 
         LoginPage Login = new LoginPage(getDriver());
@@ -50,7 +47,6 @@ public class WikiLogin extends TestBase {
     @Test
     public void Validate_FailLogin_empty_both_fields(){
         HomePage Home = new HomePage(getDriver());
-        getDriver().manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
         Home.NavigateToLoginPage();
 
         LoginPage Login = new LoginPage(getDriver());
@@ -62,7 +58,6 @@ public class WikiLogin extends TestBase {
     @Test
     public void Validate_FailLogin_empty_password(){
         HomePage Home = new HomePage(getDriver());
-        getDriver().manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
         Home.NavigateToLoginPage();
 
         LoginPage Login = new LoginPage(getDriver());
@@ -74,7 +69,6 @@ public class WikiLogin extends TestBase {
     @Test
     public void Validate_FailLogin_empty_username(){
         HomePage Home = new HomePage(getDriver());
-        getDriver().manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
         Home.NavigateToLoginPage();
 
         LoginPage Login = new LoginPage(getDriver());
@@ -86,7 +80,6 @@ public class WikiLogin extends TestBase {
     @Test
     public void Validate_session_handling_when_using_the_browser_back_button(){
         HomePage Home = new HomePage(getDriver());
-        getDriver().manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
         Home.NavigateToLoginPage();
         LoginPage Login = new LoginPage(getDriver());
         Login.InsertUsername("omar barakat91");
@@ -98,7 +91,6 @@ public class WikiLogin extends TestBase {
     @Test
     public void Validate_remmember_me_checkbox(){
         HomePage Home = new HomePage(getDriver());
-        getDriver().manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
         Home.NavigateToLoginPage();
 
         LoginPage Login = new LoginPage(getDriver());
@@ -106,7 +98,7 @@ public class WikiLogin extends TestBase {
         Login.InsertPassword("omar@2212");
         driver.findElement(By.id("wpRemember")).click();
         driver.close();
-        getDriver().manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+        
         Home.NavigateToLoginPage();
 
         //i want to Assert remember me checkbox
@@ -114,7 +106,6 @@ public class WikiLogin extends TestBase {
     @Test
     public void Validate_Brute_force_lockout() {
         HomePage Home = new HomePage(getDriver());
-        getDriver().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         Home.NavigateToLoginPage();
 
         LoginPage Login = new LoginPage(getDriver());
