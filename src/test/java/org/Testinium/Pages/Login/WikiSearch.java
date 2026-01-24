@@ -15,7 +15,6 @@ public class WikiSearch extends TestBase{
     @Test
     public void Validate_Search_Journey() throws InterruptedException {
         HomePage Home = new HomePage(getDriver());
-        getDriver().manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
         Home.SearchForTopic("fifa WC 2002");
 
 
@@ -27,7 +26,6 @@ public class WikiSearch extends TestBase{
     @Test
     public void Validate_Search_Journey_forDummyWords() throws InterruptedException {
         HomePage Home = new HomePage(getDriver());
-        getDriver().manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
         Home.SearchForTopic("hhghgg");
         //AssertNewPageTitle or element located
         SearchPage Search = new SearchPage(getDriver());

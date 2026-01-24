@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f81e1901-95a2-4f59-a02c-4f7deecbc36a" name="Changes" comment="adding more login test cases" />
+    <list default="true" id="f81e1901-95a2-4f59-a02c-4f7deecbc36a" name="Changes" comment="adding more login test cases">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/base/PageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/PageBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/Testinium/Pages/Login/WikiLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Testinium/Pages/Login/WikiLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/Testinium/Pages/Login/WikiSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Testinium/Pages/Login/WikiSearch.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,18 +23,23 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "ashrafhassan94"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ashrafhassan94&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/ashrafhassan94/AshrafWikipediaUI.git",
-    "accountId": "18750585-2912-457e-a279-dbce7eca991b"
+    "accountId": "8cd561ad-eb58-4231-9880-8b2932f4c45e"
   }
 }]]></component>
   <component name="ProjectColorInfo">{
@@ -64,11 +74,14 @@
     "TestNG.WikiLogin.executor": "Run",
     "TestNG.WikiSearch.Validate_Search_Journey_forDummyWords.executor": "Run",
     "TestNG.WikiSearch.Validate_SuccessfulLogin.executor": "Run",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "enhancements",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "C:/Users/Ashraf Ismail/git/AshrafWikipediaUI/src/main/java",
-    "last_opened_file_path": "C:/Users/Ashraf Ismail/git/AshrafWikipediaUI/src/main/java/configurations"
+    "last_opened_file_path": "C:/Users/Ashraf Ismail/git/AshrafWikipediaUI/src/main/java/configurations",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RecentsManager">
