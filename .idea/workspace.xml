@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f81e1901-95a2-4f59-a02c-4f7deecbc36a" name="Changes" comment="adding more login test cases">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="f81e1901-95a2-4f59-a02c-4f7deecbc36a" name="Changes" comment="upgrade to new selenium version, remove implicit wait and set it globally to Zero to avoid disruptions resulted from using two different waits, and finally upgrade from Java 16 to java 25">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/base/PageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/PageBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/Testinium/Pages/Login/WikiLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Testinium/Pages/Login/WikiLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/Testinium/Pages/Login/WikiSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Testinium/Pages/Login/WikiSearch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,10 +23,11 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="enhancements" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -74,7 +73,7 @@
     "TestNG.WikiLogin.executor": "Run",
     "TestNG.WikiSearch.Validate_Search_Journey_forDummyWords.executor": "Run",
     "TestNG.WikiSearch.Validate_SuccessfulLogin.executor": "Run",
-    "git-widget-placeholder": "enhancements",
+    "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "C:/Users/Ashraf Ismail/git/AshrafWikipediaUI/src/main/java",
@@ -184,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.WikiLogin" />
-        <item itemvalue="TestNG.WikiLogin.Validate_Brute_force_lockout" />
-        <item itemvalue="TestNG.WikiLogin.Validate_remmember_me_checkbox" />
         <item itemvalue="TestNG.WikiLogin.Validate_session_handling_when_using_the_browser_back_button" />
+        <item itemvalue="TestNG.WikiLogin.Validate_remmember_me_checkbox" />
         <item itemvalue="TestNG.WikiLogin.Validate_FailLogin_empty_password" />
+        <item itemvalue="TestNG.WikiLogin.Validate_Brute_force_lockout" />
+        <item itemvalue="TestNG.WikiLogin" />
       </list>
     </recent_temporary>
   </component>
@@ -233,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757459109185</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="upgrade to new selenium version, remove implicit wait and set it globally to Zero to avoid disruptions resulted from using two different waits, and finally upgrade from Java 16 to java 25">
+      <option name="closed" value="true" />
+      <created>1769294733115</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1769294733115</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -242,6 +249,22 @@
     <MESSAGE value="adding necessary files to test environment, test classes and test cases" />
     <MESSAGE value="resolving conflict with getdriver" />
     <MESSAGE value="adding more login test cases" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding more login test cases" />
+    <MESSAGE value="upgrade to new selenium version, remove implicit wait and set it globally to Zero to avoid disruptions resulted from using two different waits, and finally upgrade from Java 16 to java 25" />
+    <option name="LAST_COMMIT_MESSAGE" value="upgrade to new selenium version, remove implicit wait and set it globally to Zero to avoid disruptions resulted from using two different waits, and finally upgrade from Java 16 to java 25" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/base/PageBase.java</url>
+          <line>156</line>
+          <properties class="base.PageBase" method="closeAllPages">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

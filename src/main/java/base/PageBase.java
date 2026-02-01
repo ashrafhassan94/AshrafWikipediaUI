@@ -1,16 +1,17 @@
 package base;
 
 
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.TimeoutException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import static java.time.Duration.ofMillis;
@@ -151,6 +152,77 @@ public class PageBase {
                 fail(root.getMessage());
             }
 
+    }
+
+    protected void closeAllPages(WebDriver mainDriver){
+        mainDriver.quit();
+    }
+
+    protected void closeCurrentPage(WebDriver mainDriver){
+        mainDriver.close();
+    }
+    // available only starting from selenium4, since we upgraded we can use it
+    protected void openNewTab(WebDriver mainDriver){
+        mainDriver.switchTo().newWindow(WindowType.TAB);
+    }
+
+    protected void openNewWindow(WebDriver mainDriver){
+        mainDriver.switchTo().newWindow(WindowType.WINDOW);
+    }
+
+    protected void addCookie(WebDriver mainDriver, Cookie cookieName){
+        mainDriver.manage().addCookie(cookieName);
+    }
+
+    protected void deleteCookie(WebDriver mainDriver, String cookieName){
+        mainDriver.manage().deleteCookieNamed(cookieName);
+    }
+
+    protected void deleteAllCookies(WebDriver mainDriver){
+        mainDriver.manage().deleteAllCookies();
+    }
+    protected Set<Cookie> getALLCookies(WebDriver mainDriver){
+       return mainDriver.manage().getCookies();
+    }
+
+    protected List<String> getALLCookiesNamesAsListOfStrings(WebDriver mainDriver){
+        List<String> cookiesList= new ArrayList<>();
+        Set<Cookie> cookieSet =new HashSet<>(mainDriver.manage().getCookies());
+        for (Cookie cookie :cookieSet)
+        {
+            cookiesList.add(cookie.getName());
+        }
+        return cookiesList;
+    }
+
+    protected void setCurrentWindowPosition(int x, int y , WebDriver mainDriver){
+        Point point = new Point(x,y);
+        mainDriver.manage().window().setPosition(point);
+    }
+
+    protected int getCurrentWindowXPosition(WebDriver mainDriver){
+        return mainDriver.manage().window().getPosition().getX();
+    }
+    protected int getCurrentWindowYPosition(WebDriver mainDriver){
+        return mainDriver.manage().window().getPosition().getY();
+    }
+    protected Dimension getCurrentWindowSize(WebDriver mainDriver){
+        return mainDriver.manage().window().getSize();
+    }
+
+    protected void SetCurrentWindowSize(WebDriver mainDriver,Dimension dimension){
+        mainDriver.manage().window().setSize(dimension);
+    }
+
+    protected void maximizeCurrentWindow(WebDriver mainDriver){
+        mainDriver.manage().window().maximize();
+    }
+    protected void minimizeCurrentWindow(WebDriver mainDriver){
+        mainDriver.manage().window().minimize();
+    }
+
+    protected void activateFullscreen(WebDriver mainDriver){
+        mainDriver.manage().window().fullscreen();
     }
 
 }
